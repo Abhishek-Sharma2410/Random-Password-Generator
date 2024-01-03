@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-blue-950 text-white h-[100vh] flex justify-center items-center">
+        <div class="p-[40px] border-2 border-cyan-300 w-[500px] rounded-2xl">
+            <div class="text-center mb-[25px]">
+                <h2 class="text-3xl font-semibold pb-[10px]">Password Generator</h2>
+                <input type="text" id="password" placeholder="Click on generate button" class="text-blue-950 p-[5px] rounded-md text-xs" readonly>
+            </div>
+            <div class="flex justify-center items-center mb-[25px]">
+                <button class="bg-purple-400 font-semibold rounded-xl p-[8px] cursor-pointer mr-[15px]" id="generate">
+                    Generate
+                </button>
+                <button class="bg-purple-400 font-semibold rounded-xl p-[8px] cursor-pointer" id="copy">
+                    Copy to clipboard
+                </button>
+            </div>
+            <div>
+                <div class="flex justify-between items-center">
+                    <label for="length" class="font-semibold">Enter Password length</label>
+                    <input type="number" id="length" class="text-slate-300 bg-blue-950 border-2 border-slate-300" style="width: 80px; border-radius: 10px;">
+                </div>
+                <div class="flex justify-between items-center">
+                    <label for="uppercase" class="font-semibold">Include UpperCase letters</label>
+                    <input type="checkbox" id="uppercase">
+                </div>
+                <div class="flex justify-between items-center">
+                    <label for="lowercase" class="font-semibold">Include lowercase letters</label>
+                    <input type="checkbox" id="lowercase">
+                </div>
+                <div class="flex justify-between items-center">
+                    <label for="numbers" class="font-semibold">Include Numbers</label>
+                    <input type="checkbox" id="numbers">
+                </div>
+                <div class="flex justify-between items-center">
+                    <label for="symbols" class="font-semibold">Include Symbols</label>
+                    <input type="checkbox" id="symbols">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
